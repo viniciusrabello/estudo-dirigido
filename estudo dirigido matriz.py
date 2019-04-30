@@ -30,6 +30,6 @@ def VerMemoria(ini, fim):
         VerMatriz(i)
         i += 1
         
-def ApagarMatriz(ind):
-    del memoria[ind:ind+1]
+def ApagarMatriz(ind,fim):
+    del memoria[ind:fim+1]
 
