@@ -33,3 +33,13 @@ def VerMemoria(ini, fim):
 def ApagarMatriz(ind,fim):
     del memoria[ind:fim+1]
 
+def SomarMatriz(a,b):
+    mat = []
+    l = []
+    for i in range(len(memoria[a])):
+        for s in range(len(memoria[a][i])):
+            c = memoria[a][i][s] + memoria[b][i][s]
+            l.append(c)
+        mat.append(l)
+    memoria.append(mat)
+    VerMatriz(len(memoria) - 1)
