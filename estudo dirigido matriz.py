@@ -40,11 +40,10 @@ def SomarMatriz(a,b):
         for i in range(len(memoria[a])):
             for s in range(len(memoria[a][i])):
                 c = float(memoria[a][i][s]) + float(memoria[b][i][s])
-                if c == int(c): #printar o número sem o .0 no final (ex: 3.0 pra 3)
-                    c = int(c)
             l.append(c)
             mat.append(l)
         memoria.append(mat)
         VerMatriz(len(memoria) - 1)
     else:
         print('as matrizes tem que ter mesmo numero de linhas e de colunas')
+
