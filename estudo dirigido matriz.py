@@ -24,8 +24,10 @@ def CriarMatriz(m,n):
 
 def VerMemoria(ini, fim):
     i = 0
-    if ini < 0: ini = 0
-    if fim >= len(memoria): fim = len(memoria) - 1
+    if ini < 0:
+        ini = 0
+    if fim >= len(memoria):
+        fim = len(memoria) - 1
     while i <= fim and ini <= i:
         VerMatriz(i)
         i += 1
