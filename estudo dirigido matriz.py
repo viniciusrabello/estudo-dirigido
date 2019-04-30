@@ -34,12 +34,17 @@ def ApagarMatriz(ind,fim):
     del memoria[ind:fim+1]
 
 def SomarMatriz(a,b):
-    mat = []
-    l = []
-    for i in range(len(memoria[a])):
-        for s in range(len(memoria[a][i])):
-            c = memoria[a][i][s] + memoria[b][i][s]
+    if len(memoria[a]) == len(memoria[b]) and len(memoria[a][0]) == len(memoria[b][0]):
+        mat = []
+        l = []
+        for i in range(len(memoria[a])):
+            for s in range(len(memoria[a][i])):
+                c = float(memoria[a][i][s]) + float(memoria[b][i][s])
+                if c == int(c): #printar o número sem o .0 no final (ex: 3.0 pra 3)
+                    c = int(c)
             l.append(c)
-        mat.append(l)
-    memoria.append(mat)
-    VerMatriz(len(memoria) - 1)
+            mat.append(l)
+        memoria.append(mat)
+        VerMatriz(len(memoria) - 1)
+    else:
+        print('as matrizes tem que ter mesmo numero de linhas e de colunas')
