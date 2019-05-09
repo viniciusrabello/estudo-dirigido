@@ -2,8 +2,12 @@ memoria = []
 
 def VerMatriz(ind):
     print()
-    for s in memoria[ind]:
-        print(*s)
+    for i in range(len(memoria[ind])):
+        print('+', '-'*(16*(len(memoria[ind][0])) + (len(memoria[ind][0]) - 3)), '+')
+        for j in range (len((memoria[ind][0]))):
+            print('|{0:^15f}'.format(memoria[ind][i][j]), end = ' ')
+        print('|')
+    print('+', '-'*(16*(len(memoria[ind][0])) + (len(memoria[ind][0]) - 3)), '+')
     print()
     
 def CriarMatriz(m,n):
@@ -48,4 +52,5 @@ def SomarMatriz(a,b):
         VerMatriz(len(memoria) - 1)
     else:
         print('as matrizes tem que ter mesmo numero de linhas e de colunas')
+
 
