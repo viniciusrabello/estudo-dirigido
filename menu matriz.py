@@ -1,313 +1,5331 @@
-memoria = []
-backup = []
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def VerMatriz(ind):
-    print()
-    for s in memoria[ind]:
-        print(s)
-    print()
+Escolha uma das opções abaixo: 
+1.Soma Matricial (C = A + B)
+2.Subtração Matricial (C = A - B)
+3.Multiplicação por Escalar (C = aA onde a é um número inteiro)
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def CriarM(a,b):
-    matriz = []
-    c = 0
-    for i in range (a):
-        print()
-        linha = [int(i) for i in input("Escreva sua Linha Separando-a por Espaço: ").split()]
-        matriz.append(linha)
-        while len(linha) < b:
-            linha.append(1)
-        while len(linha) > b:
-            del linha[-1] 
-    memoria.append(matriz)
-    VerMatriz(len(memoria) - 1)
-    return matriz
+Escolha uma das opções abaixo: 
+1.Soma Matricial (C = A + B)
+2.Subtração Matricial (C = A - B)
+3.Multiplicação por Escalar (C = aA onde a é um número inteiro)
+4.Multiplicação Matricial (C = A x B)
+5.Transposição
+6.Permutar Duas Linhas ou Duas Colunas de posição
+7.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna
+8.Multiplicar uma única Linha ou Coluna, por uma Escalar
+9.Inversão de Matrizes Quadradas 2x2
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def VerMemoria(ini, fim):
-    i = 0
-    if ini < 0: 
-        ini = 0
-    if fim >= len(memoria): 
-        fim = len(memoria) - 1
-    while i <= fim and ini <= i:
-        VerMatriz(i)
-        i += 1
+Escolha uma das opções abaixo: 
+1.Soma ou Subtração Matricial (C = A + B ou C = A - B)
+2.Multiplicação por Escalar (C = aA onde a é um número inteiro)
+3.Multiplicação Matricial (C = A x B)
+4.Transposição
+5.Permutar Duas Linhas ou Duas Colunas de posição
+6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna
+7.Multiplicar uma única Linha ou Coluna, por uma Escalar
+8.Inversão de Matrizes Quadradas 2x2
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def VerMemoriaToda():
-    print('\nEssas são suas Matrizes:\n')
-    if len(memoria) != 0:
-        for i in range(len(memoria)):
-            VerMatriz(i)
-            i += 1
-    else:
-        print("Sua memória está vazia")
+Escolha uma das opções abaixo: 
 
-def ApagarMatriz(ind,fin):
-    print("Essas serão as matrizes que você vai apagar, tem certeza disso?(S para sim e N para não) ")
-    VerMemoria(ind,fin)
-    confirma = (input("----> ")).lower()
-    print("")
-    if confirma == 's':
-        del memoria[ind:fin+1]
-    elif confirma == 'n':
-        pass
-    else:
-        ApagarMatriz(ind,fin)
+1.Soma ou Subtração Matricial (C = A + B ou C = A - B)
+2.Multiplicação por Escalar (C = aA onde a é um número inteiro)
+3.Multiplicação Matricial (C = A x B)
+4.Transposição
+5.Permutar Duas Linhas ou Duas Colunas de posição
+6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna
+7.Multiplicar uma única Linha ou Coluna, por uma Escalar
+8.Inversão de Matrizes Quadradas 2x2
 
-def ApagarMemoria():
-    memoria.clear()
+Escolha a opção desejada:
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def SomarMatrizes(a,b):
-    Mat = []    
+Escolha uma das opções abaixo: 
+
+1.Soma ou Subtração Matricial (C = A + B ou C = A - B)
+2.Multiplicação por Escalar (C = aA onde a é um número inteiro)
+3.Multiplicação Matricial (C = A x B)
+4.Transposição
+5.Permutar Duas Linhas ou Duas Colunas de posição
+6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna
+7.Multiplicar uma única Linha ou Coluna, por uma Escalar
+8.Inversão de Matrizes Quadradas 2x2
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+===============================================================
+1.Soma ou Subtração Matricial (C = A + B ou C = A - B)
+2.Multiplicação por Escalar (C = aA onde a é um número inteiro)
+3.Multiplicação Matricial (C = A x B)
+4.Transposição
+5.Permutar Duas Linhas ou Duas Colunas de posição
+6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna
+7.Multiplicar uma única Linha ou Coluna, por uma Escalar
+8.Inversão de Matrizes Quadradas 2x2
+===============================================================
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+================================================================
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+================================================================
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+=================================================================
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+=================================================================
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
++===============================================================+
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
++===============================================================+
+|Escolha a opção desejada: 
++===============================================================+
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
++===============================================================+
+|Escolha a opção desejada:                                      |
++===============================================================+
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
++===============================================================+
+Escolha a opção desejada:                                        |
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+>>> X
+3
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+Sua memória está vazia
+Escolha A: 
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 218, in <module>
+    a = int(input('Escolha A: '))
+ValueError: invalid literal for int() with base 10: ''
+>>> 
+>>> CriarMatriz(3,3)
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    CriarMatriz(3,3)
+NameError: name 'CriarMatriz' is not defined
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+>>> a
+3
+>>> b
+3
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                               |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 1 2 3
+Escreva sua linha separando-a por espaço: 4 5 6
+Escreva sua linha separando-a por espaço: 7 8 9
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 1
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+>>> 0
+0
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 1 2 3
+Escreva sua linha separando-a por espaço: 4 5 6
+Escreva sua linha separando-a por espaço: 7 8 9
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+Escolha A: 0
+Escolha B: 1
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 223, in <module>
+    SomarMatrizes(a,b)
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 60, in SomarMatrizes
     for i in range(len(a)):
-        linha = []
-        for j in range(int(len(a[i]))):
-            linha.append(int(a[i][j]) + int(b[i][j]))
-        Mat.append(linha)
-    memoria.append(Mat)
-    return Mat
-
-def SubtrairMatrizes(a,b):
-    Mat = []    
+TypeError: object of type 'int' has no len()
+>>> SomarMatrizes(0,1)
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    SomarMatrizes(0,1)
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 60, in SomarMatrizes
     for i in range(len(a)):
-        linha = []
-        for j in range(int(len(a[i]))):
-            linha.append(int(a[i][j]) - int(b[i][j]))
-        Mat.append(linha)
-    memoria.append(Mat)
-    return Mat
+TypeError: object of type 'int' has no len()
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def Escalar(a,b):
-    Mat = []    
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 0
+Escolha a: 3
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 242, in <module>
+    Escalar(A,a)
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 80, in Escalar
     for i in range(len(a)):
-        linha = []
-        for j in range(int(len(a[i]))):
-            linha.append(int(a[i][j]) * b)
-        Mat.append(linha)
-    memoria.append(Mat)
-    return Mat
+TypeError: object of type 'int' has no len()
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def EscalarLC1(a,b):
-    LC = input("Você quer multiplicar uma linha ou uma coluna? ")
-    if LC == 'linha':
-        Lin = int(input("Qual linha você quer multiplicar por escalar? (contagem começa no 1)")) -1
-        for j in range(int(len(a[Lin]))):
-            a[Lin][j] = (int(a[Lin][j])*b)
-        return a
-    if LC == 'coluna':
-        Col = int(input("Qual é a coluna que você quer multiplicar por escalar? (contagem começa no 1)")) - 1
-        for i in range(len(a)):
-            a[i][Col] = (int(a[i][Col])*b)
-    memoria.append(a)
-    return a
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
 
-def EscalarLC(a,b,LC):
-    if LC == 1:
-        print()
-        Lin = int(input("Escolha a Linha a ser Multiplicada: "))
-        for j in range(int(len(a[Lin]))):
-            a[Lin][j] = (int(a[Lin][j])*b)
-        return a
-    if LC == 2:
-        print()
-        Col = int(input("Escolha a Coluna a ser Multiplicada: "))
-        for i in range(len(a)):
-            a[i][Col] = (int(a[i][Col])*b)
-    memoria.append(a)
-    return a
+Escolha a opção desejada: 0
 
-def MultMat(A, B):
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 2 2 2 2 2
+Escreva sua linha separando-a por espaço: 3 3 3 3 3
+Escreva sua linha separando-a por espaço: 4 4 4 4 4
+Escreva sua linha separando-a por espaço: 5 5 5 5 5
+
+[1, 1, 1, 1, 1]
+[2, 2, 2, 2, 2]
+[3, 3, 3, 3, 3]
+[4, 4, 4, 4, 4]
+[5, 5, 5, 5, 5]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+[1, 1, 1, 1, 1]
+[2, 2, 2, 2, 2]
+[3, 3, 3, 3, 3]
+[4, 4, 4, 4, 4]
+[5, 5, 5, 5, 5]
+
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 206, in <module>
+    b = int(input('\nEscolha o Número de Colunas: '))
+ValueError: invalid literal for int() with base 10: ''
+>>> 
+>>> 0
+0
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+Escreva sua linha separando-a por espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+
+Escreva sua Linha Separando-a por Espaço: 2
+
+Escreva sua Linha Separando-a por Espaço: 3
+
+Escreva sua Linha Separando-a por Espaço: 5
+
+[2, 1, 1]
+[3, 1, 1]
+[5, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 3 3 3
+
+Escreva sua Linha Separando-a por Espaço: 4 4 4
+
+Escreva sua Linha Separando-a por Espaço: 5 5 5
+
+[3, 3, 3]
+[4, 4, 4]
+[5, 5, 5]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 0
+
+Escolha B: 0
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 252, in <module>
+    MultMat(a,b)
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 104, in MultMat
     LinhasA = len(A)
-    ColunasA = len(A[0])
-    LinhasB = len(B)
-    ColunasB = len(B[0])
-    if ColunasA != LinhasB:
-        print("Você nao pode multiplicar essas matrizes")
-        return
-    C = [[0 for lin in range(ColunasB)] for col in range(LinhasA)]
-    for i in range(LinhasA):
-        for j in range(ColunasB):
-            for k in range(ColunasA):
-                C[i][j] += A[i][k] * B[k][j]
-    memoria.append(C)
-    return C
+TypeError: object of type 'int' has no len()
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
 
-def Tranposicao(a):
-    Mat = []
-    linhas = len(a)
-    colunas = len(a[0])
-    for i in range(colunas):
-        linha = []
-        for j in range(linhas):
-            linha.append(a[j][i])
-        Mat.append(linha)
-    memoria.append(Mat)
-    return Mat
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
 
-def Permutadora2x2(a,PLC):
-    Mat = []
-    if PLC == 1:
-        A =[[0,1],[1,0]]
-        Mat = MultMat(A,a)
-    if PLC == 2:
-        A =[[0,1],[1,0]]
-        Mat = MultMat(a,A)
-    memoria.append(Mat)
-    return Mat
+Escolha a opção desejada: 1
 
-def Inversora2x2(a):
-    A =[[0,1],[1,0]]
-    Mat = MultMat(a,A)
-    Mat = MultMat(A,Mat)
-    memoria.append(Mat)
-    return Mat
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
 
-# Das funcoes normais so falta somar uma coluna ou uma linha por outra
-# depois tenho que fazer tratamento de erros (vale bastante ponto)
-# depois o menu e a forma la de printar
-# se sobrar tempo tentar fazer as outras funcoes
-# Terminar Backup e ler de arquivo a matriz
+Escolha a opção desejada: 1
+
++===============================================================+
+
+Essas são suas Matrizes:
+
+Sua memória está vazia
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 3 3 3
+
+Escreva sua Linha Separando-a por Espaço: 4 4 4
+
+Escreva sua Linha Separando-a por Espaço: 5 5 5
+
+[3, 3, 3]
+[4, 4, 4]
+[5, 5, 5]
 
 
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
 
-def Backup():
-    for i in range(len(memoria)):
-        backup.append(memoria[i])
-    print("O seu Backup foi criado/atualizado ")
-    return backup
+Escolha a opção desejada: 4
 
-def LerBackup():
-    if len(backup) != 0:
-        for i in range(len(backup)):
-            print(backup[i])
-    else:
-        print("Seu Backup está vazio")
+Essas são suas Matrizes:
 
-def AttMemoria():
-    print("Você selecionou atualizar sua memoria com o Backup, isso vai destruir sua memoria atual.")
-    dec = (input("Você tem certeza disso? (s para sim e n para não) ")).lower()
-    if dec == 's':
-        memoria = backup
-        VerMemoriaToda()
-        LerBackup()
-    elif dec == 'n':
-        pass
-    else:
-        print("Você digitou algo diferente de n ou s, tente novamente")
-        AttMemoria()
-    return memoria
-    
-while True:
 
-    print('\n+==================== Calculadora Matricial ====================+')
-    print('|                                                               |')
-    print('|0.Criar Matriz                                                 |')
-    print('|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |')
-    print('|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|')
-    print('|3.Multiplicação Matricial (C = A x B)                          |')
-    print('|4.Transposição                                                 |')
-    print('|5.Permutar Duas Linhas ou Duas Colunas de posição              |')
-    print('|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |')
-    print('|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |')
-    print('|8.Inversão de Matrizes Quadradas 2x2                           |')
-    print('|                                                               |')
-    print('+===============================================================+\n')
+[3, 3, 3]
+[4, 4, 4]
+[5, 5, 5]
 
+
+Escolha sua Matriz: 
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 257, in <module>
+    a = int(input('Escolha sua Matriz: '))
+ValueError: invalid literal for int() with base 10: ''
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 4
+
+Essas são suas Matrizes:
+
+Sua memória está vazia
+
+Escolha sua Matriz: 3
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 259, in <module>
+    Transposicao(a)
+NameError: name 'Transposicao' is not defined
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 0
+Escolha B: 1
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[2, 2, 2]
+[2, 2, 2]
+[2, 2, 2]
+
+
+Escolha A: 1
+Escolha B: 2
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[2, 2, 2]
+[2, 2, 2]
+[2, 2, 2]
+
+
+[3, 3, 3]
+[3, 3, 3]
+[3, 3, 3]
+
+
+Escolha A: 3
+Escolha B: 1
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 1 2 3
+
+Escreva sua Linha Separando-a por Espaço: 4 5 6
+
+Escreva sua Linha Separando-a por Espaço: 7 8 9
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[2, 2, 2]
+[2, 2, 2]
+[2, 2, 2]
+
+
+[3, 3, 3]
+[3, 3, 3]
+[3, 3, 3]
+
+
+[4, 4, 4]
+[4, 4, 4]
+[4, 4, 4]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+Escolha A: 5
+Escolha B: 1
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[2, 2, 2]
+[2, 2, 2]
+[2, 2, 2]
+
+
+[3, 3, 3]
+[3, 3, 3]
+[3, 3, 3]
+
+
+[4, 4, 4]
+[4, 4, 4]
+[4, 4, 4]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[2, 3, 4]
+[5, 6, 7]
+[8, 9, 10]
+
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 0
+Escolha B: 1
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 227, in <module>
+    print(Mat)
+NameError: name 'Mat' is not defined
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha A: 0
+Escolha B: 1
+
+[[2, 2, 2], [2, 2, 2], [2, 2, 2]]
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 1 2 3
+
+Escreva sua Linha Separando-a por Espaço: 4 5 6
+
+Escreva sua Linha Separando-a por Espaço: 7 8 9
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+Escolha A: 0
+Escolha B: 1
+
+
+[2, 3, 4]
+[5, 6, 7]
+[8, 9, 10]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[2, 3, 4]
+[5, 6, 7]
+[8, 9, 10]
+
+
+Escolha A: 2
+Escolha B: 0
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[2, 3, 4]
+[5, 6, 7]
+[8, 9, 10]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+Escolha A: 0
+
+Escolha a: 9
+
+
+[9, 9, 9]
+[9, 9, 9]
+[9, 9, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[2, 3, 4]
+[5, 6, 7]
+[8, 9, 10]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[9, 9, 9]
+[9, 9, 9]
+[9, 9, 9]
+
+
+Escolha A: 0
+
+Escolha B: 4
+
+
+[27, 27, 27]
+[27, 27, 27]
+[27, 27, 27]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 4
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[2, 3, 4]
+[5, 6, 7]
+[8, 9, 10]
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+[9, 9, 9]
+[9, 9, 9]
+[9, 9, 9]
+
+
+[27, 27, 27]
+[27, 27, 27]
+[27, 27, 27]
+
+
+Escolha sua Matriz: 1
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 263, in <module>
+    Transposicao(memoria[a])
+NameError: name 'Transposicao' is not defined
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 1 1 1
+
+Escreva sua Linha Separando-a por Espaço: 2 2 2
+
+Escreva sua Linha Separando-a por Espaço: 3 3 3
+
+[1, 1, 1]
+[2, 2, 2]
+[3, 3, 3]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 4
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[2, 2, 2]
+[3, 3, 3]
+
+
+Escolha sua Matriz: 0
+
+
+[1, 2, 3]
+[1, 2, 3]
+[1, 2, 3]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 5
+Escolha sua Matriz:0
+Permutar linhas ou colunas? linhas
+Você nao pode multiplicar essas matrizes
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 269, in <module>
+    VerMatriz(len(memoria) - 1)
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 6, in VerMatriz
+    for s in memoria[ind]:
+TypeError: 'NoneType' object is not iterable
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 1
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 4
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 5
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz:1
+
++===============================================================+
+|                                                               |
+|1.Linhas                                                       |
+|2.Colunas                                                      |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+Você nao pode multiplicar essas matrizes
+
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 290, in <module>
+    VerMatriz(len(memoria) - 1)
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 6, in VerMatriz
+    for s in memoria[ind]:
+TypeError: 'NoneType' object is not iterable
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 1 2
+
+Escreva sua Linha Separando-a por Espaço: 3 4
+
+[1, 2]
+[3, 4]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 5
+
+Essas são suas Matrizes:
+
+
+[1, 2]
+[3, 4]
+
+
+Escolha sua Matriz:0
+
++===============================================================+
+|                                                               |
+|1.Linhas                                                       |
+|2.Colunas                                                      |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+[3, 4]
+[1, 2]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 5
+
+Essas são suas Matrizes:
+
+
+[1, 2]
+[3, 4]
+
+
+[3, 4]
+[1, 2]
+
+
+[3, 4]
+[1, 2]
+
+
+Escolha sua Matriz:0
+
++===============================================================+
+|                                                               |
+|1.Linhas                                                       |
+|2.Colunas                                                      |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+[2, 1]
+[4, 3]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 1 2
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 216, in <module>
+    a = int(input('\nEscolha o Número de Linhas: ')) #DÁ ERRO QUANDO NÃO COLOCAM NÚMERO
+ValueError: invalid literal for int() with base 10: '1 2'
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 1 2
+
+Escreva sua Linha Separando-a por Espaço: 3 4
+
+[1, 2]
+[3, 4]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 5
+
+Essas são suas Matrizes:
+
+
+[1, 2]
+[3, 4]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+[2, 1]
+[4, 3]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desehada: 1
+Escolha a Escalar: 3
+Qual linha você quer multiplicar por escalar? (contagem começa no 1)2
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[3, 3, 3]
+[1, 1, 1]
+
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 1 2 3
+
+Escreva sua Linha Separando-a por Espaço: 4 5 6
+
+Escreva sua Linha Separando-a por Espaço: 7 8 9
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada:
+1
+Escolha a Escalar:
+3
+
+Escolha a Linha a ser Multiplicada0
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[3, 6, 9]
+[4, 5, 6]
+[7, 8, 9]
+
+
+Escolha A: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py", line 219, in <module>
+    a = int(input('\nEscolha o Número de Linhas: ')) #DÁ ERRO QUANDO NÃO COLOCAM NÚMERO
+ValueError: invalid literal for int() with base 10: ''
+>>> 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada:
+3
+Escolha a Escalar:
+2
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada:
+2
+Escolha a Escalar:
+3
+
+Escolha a Coluna a ser Multiplicada: 1
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 3, 1]
+[1, 3, 1]
+[1, 3, 1]
+
+
+[1, 3, 1]
+[1, 3, 1]
+[1, 3, 1]
+
+
+[1, 3, 1]
+[1, 3, 1]
+[1, 3, 1]
+
+
+Escolha sua Matriz: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Escolha a Escalar: 3
+
+Escolha a Linha a ser Multiplicada: 1
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 7
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Escolha a Escalar: 3
+
+Escolha a Linha a ser Multiplicada: 1
+
+[1, 1, 1]
+[3, 3, 3]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+= RESTART: C:/Users/Vinicius-pc/AppData/Local/Programs/Python/Python37/a.py =
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 1 2
+
+Escreva sua Linha Separando-a por Espaço: 3 4
+
+[1, 2]
+[3, 4]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+
+Essas são suas Matrizes:
+
+
+[1, 2]
+[3, 4]
+
+
+Escolha sua Matriz: 0
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
++===============================================================+
+|                                                               |
+|1.Soma Matricial (C = A + B)                                   |
+|2.Subtração Matricial (C = A - B)                              |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Essas são suas Matrizes:
+
+
+[1, 2]
+[3, 4]
+
+
+[2, 1]
+[4, 3]
+
+
+[4, 3]
+[2, 1]
+
+
+[4, 3]
+[2, 1]
+
+
+Escolha A: 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+>>> 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 3 7 8
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 0 2 0
+
+[3, 7, 8]
+[1, 1, 1]
+[0, 2, 0]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 8
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 1 2 3
+
+Escreva sua Linha Separando-a por Espaço: 4 5 6
+
+Escreva sua Linha Separando-a por Espaço: 7 8 9
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 4
+
+Essas são suas Matrizes:
+
+
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+
+
+Escolha sua Matriz: 0
+
+
+[1, 4, 7]
+[2, 5, 8]
+[3, 6, 9]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+Escolha o Intervalo da Memória à ser Visto
+Início do Intervalo: 0
+
+Fim do Intervalo: 1
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+Escolha o Intervalo da Memória à ser Visto
+Início do Intervalo: 0
+
+Fim do Intervalo: 99
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|1.Ver Lista de Matrizes                                        |
+|2.Importar Matriz                                              |
+|3.Inserir uma Matriz Identidade                                |
+|4.Alterar ou Remover Matrizes                                  |
+|5.Exportar Lista de Matrizes                                   |
+|6.Importar Lista de Matrizes                                   |
+|7.Zerar Lista de Matrizes                                      |
+|8.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 3
+
+Fim do Intervalo: 7
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++===============================================================+
+|1.Alterar                                                       |
+|2.Remover                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
+Escolha sua Matriz: 1
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 6
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/Desktop/menu matriz.py", line 334, in <module>
+    ini = int(input('\nInício do Intervalo: '))
+ValueError: invalid literal for int() with base 10: ''
+>>> memoria
+[]
+>>> 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/Desktop/menu matriz.py", line 216, in <module>
     X = int(input('Escolha a opção desejada: '))
+ValueError: invalid literal for int() with base 10: ''
+>>> 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
 
-    if X == 0:
-        
-        a = int(input('\nEscolha o Número de Linhas: ')) #DÁ ERRO QUANDO NÃO COLOCAM NÚMERO
-        b = int(input('\nEscolha o Número de Colunas: ')) #DÁ ERRO QUANDO NÃO COLOCAM NÚMERO
-        CriarM(a,b)
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
 
-    if X == 1:
+Escolha a opção desejada: 0
 
-        print('\n+===============================================================+')
-        print('|                                                               |')
-        print('|1.Soma Matricial (C = A + B)                                   |')
-        print('|2.Subtração Matricial (C = A - B)                              |')
-        print('|                                                               |')
-        print('+===============================================================+\n')
+Escolha o Número de Linhas: 3
 
-        S = int(input('Escolha a opção desejada: '))
+Escolha o Número de Colunas: 3
 
-        if S == 1:
-            VerMemoriaToda()
-            print()
-            a = int(input('Escolha A: '))
-            b = int(input('Escolha B: '))
-            print()
-            SomarMatrizes(memoria[a],memoria[b])
-            VerMatriz(len(memoria) - 1)
+Escreva sua Linha Separando-a por Espaço: 
 
-        if S == 2:
-            VerMemoriaToda()
-            print()
-            a = int(input('Escolha A: '))
-            b = int(input('Escolha B: '))
-            print()
-            SubtrairMatrizes(memoria[a],memoria[b])
-            VerMatriz(len(memoria) - 1)
+Escreva sua Linha Separando-a por Espaço: 
 
-    if X == 2:
-        VerMemoriaToda()
-        print()
-        A = int(input('Escolha A: '))
-        print()
-        a = int(input('Escolha a: '))
-        print()
-        Escalar(memoria[A],a)
-        VerMatriz(len(memoria) - 1)
+Escreva sua Linha Separando-a por Espaço: 
 
-    if X == 3:
-        VerMemoriaToda()
-        print()
-        a = int(input('Escolha A: '))
-        print()
-        b = int(input('Escolha B: '))
-        print()
-        MultMat(memoria[a],memoria[b])
-        VerMatriz(len(memoria) - 1)
-        
-    #if X == 4:
-        #VerMemoriaToda()
-        #print()
-        #a = int(input('Escolha sua Matriz: '))
-        #print()
-        #Tranposicao(memoria[a])
-        #VerMatriz(len(memoria) - 1)
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
 
-    if X == 5:
-        VerMemoriaToda()
-        print()
-        a = int(input('Escolha sua Matriz: '))
-        print('\n+===============================================================+')
-        print('|1.Linhas                                                       |')
-        print('|2.Colunas                                                      |')
-        print('+===============================================================+\n')
 
-        PLC = int(input('Escolha a opção desejada: '))
-        Permutadora2x2(memoria[a],PLC)
-        VerMatriz(len(memoria) - 1)
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
 
-    #if X == 6:
-    if X == 7:
-        VerMemoriaToda()
-        print()
-        a = int(input('Escolha sua Matriz: '))
-        print('\n+===============================================================+')
-        print('|1.Linhas                                                       |')
-        print('|2.Colunas                                                      |')
-        print('+===============================================================+\n')
+Escolha a opção desejada: 0
 
-        LC = int(input('Escolha a opção desejada: '))
-        b = int(input('\nEscolha a Escalar: '))
+Escolha o Número de Linhas: 2
 
-        EscalarLC(memoria[a],b,LC)
-        VerMatriz(len(memoria) - 1)
+Escolha o Número de Colunas: 2
 
-    if X == 8:
-        VerMemoriaToda()
-        print()
-        a = int(input('Escolha sua Matriz: '))
-        Inversora2x2(memoria[a])
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++===============================================================+
+|1.Alterar                                                       |
+|2.Remover                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+Você tem certeza? - digite S para sim e N para nãos
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/Desktop/menu matriz.py", line 353, in <module>
+    if confirma == s:
+NameError: name 's' is not defined
+>>> 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++===============================================================+
+|1.Alterar                                                       |
+|2.Remover                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
+Escolha sua Matriz: 1
+
+[1, 1]
+[1, 1]
+
+Você tem certeza? - digite S para sim e N para nãos
+Traceback (most recent call last):
+  File "C:/Users/Vinicius-pc/Desktop/menu matriz.py", line 353, in <module>
+    if confirma == s:
+NameError: name 's' is not defined
+>>> 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++===============================================================+
+|1.Alterar                                                       |
+|2.Remover                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
+Escolha sua Matriz: 1
+
+[1, 1]
+[1, 1]
+
+Você tem certeza? - digite S para sim e N para nãos
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 6
+Você tem certeza? - digite S para sim e N para não
+  n
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++===============================================================+
+|1.Alterar                                                       |
+|2.Remover                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
+Escolha sua Matriz: 1
+
+[1, 1]
+[1, 1]
+
+Você tem certeza? - digite S para sim e N para nãos
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 6
+Você tem certeza? - digite S para sim e N para não
+  s
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
+============ RESTART: C:/Users/Vinicius-pc/Desktop/menu matriz.py ============
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 3
+
+Escolha o Número de Colunas: 3
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 2
+
+Escolha o Número de Colunas: 2
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 5
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+Escolha sua Matriz: 1
+
++===============================================================+
+|1.Linhas                                                       |
+|2.Colunas                                                      |
++===============================================================+
+
+Escolha a opção desejada: 1
+
+[1, 1]
+[1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Número de Linhas: 5
+
+Escolha o Número de Colunas: 5
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+Escreva sua Linha Separando-a por Espaço: 
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 3
+
++===============================================================+
+|1.Alterar                                                       |
+|2.Remover                                                      |
++===============================================================+
+
+Escolha a opção desejada: 2
+
+Essas são suas Matrizes:
+
+
+[1, 1, 1]
+[1, 1, 1]
+[1, 1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
+Escolha sua Matriz: 0
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
+[1, 1]
+[1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1]
+[1, 1]
+
+
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1]
+
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 6
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 9
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Ver Lista de Matrizes                                        |
+|1.Importar Matriz                                              |
+|2.Inserir uma Matriz Identidade                                |
+|3.Alterar ou Remover Matrizes                                  |
+|4.Exportar Lista de Matrizes                                   |
+|5.Importar Lista de Matrizes                                   |
+|6.Zerar Lista de Matrizes                                      |
+|7.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 0
+
+Escolha o Intervalo da Memória à ser Visto
+
+Início do Intervalo: 0
+
+Fim do Intervalo: 20
+
++==================== Calculadora Matricial ====================+
+|                                                               |
+|0.Criar Matriz                                                 |
+|1.Soma ou Subtração Matricial (C = A + B ou C = A - B)         |
+|2.Multiplicação por Escalar (C = aA onde a é um número inteiro)|
+|3.Multiplicação Matricial (C = A x B)                          |
+|4.Transposição                                                 |
+|5.Permutar Duas Linhas ou Duas Colunas de posição              |
+|6.Somar à uma Linha outra Linha ou à uma Coluna outra Coluna   |
+|7.Multiplicar uma única Linha ou Coluna, por uma Escalar       |
+|8.Inversão de Matrizes Quadradas 2x2                           |
+|9.Outros                                                       |
+|                                                               |
++===============================================================+
+
+Escolha a opção desejada: 
